@@ -23,7 +23,7 @@ services:
 
   app: &app_base
     container_name: "homeland_app"
-    image: homeland/homeland:${IMAGE_VERSION:-3-8-latest}
+    image: kelby/cointoken:${IMAGE_VERSION:-3-8-latest}
     env_file:
       - app.secret.env
       - app.local.env
